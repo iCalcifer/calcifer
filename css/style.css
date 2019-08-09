@@ -33,6 +33,10 @@ ul {
     padding: 30px 0 0;
 }
 
+.title{
+    text-decoration: none;
+}
+
 .head h1 {
     margin: 0;
     font-size: 32px;
