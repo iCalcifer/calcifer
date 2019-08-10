@@ -30,8 +30,6 @@
 
 这些字句，仿佛是我近期状态的投射，像是终于爆发的火山，看着岩浆四散蜿蜒而去，经过之处留下灼热的灰烬和不肯散去的火星。
 
-![image](https://mmbiz.qpic.cn/mmbiz_jpg/C9dl88LmofrLX54R5kZIcPZxWt7ciaPibjzFLXtCldV6v1ibGlsMlMQoUicmDylrw0cSWNC7ibqAibUzpP3BXHib7htMw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
 小时候，爸爸会将名人名言整整齐齐写在家里的小黑板上，我默默看着，学着爸爸粉笔字的笔迹，也默默背诵着那些缩写人生的至理名言。我从未想到，有一天，多年阅读留给我的是深深的救赎，自我救赎。那些藏在书里的字句，那始终带着油墨香气的意义，在我身边立体着，有血有肉有感情，我看得见无数透明的自己，所以不曾胆怯，不曾孤单，不曾放弃。
 
 因为，我看见的所有的一个又一个独立存在的“她”，都拥有不碎的意志。

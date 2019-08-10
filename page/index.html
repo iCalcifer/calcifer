@@ -8,7 +8,7 @@
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 	<script src="./../js/showdown-toc.js"></script>
 	<link rel="stylesheet" href="./../css/style.css">
-	<!--<link rel="stylesheet" href="./../css/page.css">-->
+	<link rel="stylesheet" href="./../css/page.css">
     <link rel="shortcut icon" href="./../favicon.ico">
 </head>
 
@@ -30,7 +30,8 @@
 
     <section class="content">
 		<div class="item">
-			<div class="list"></div>
+			<div class="markdown-body"></div>
+		<a href="#" class="back">Back</a>
 		</div>
     </section>
 
@@ -38,21 +39,23 @@
 </div>
 </body>
 <script type="text/javascript">
+$(".back").click(function(){
+	history.back();
+});
 let pageParams = new URLSearchParams(window.location.search);
 let title = "list.md";
 if(pageParams.has('title')){
 	title = pageParams.get('title') + ".md";
 }
-console.log(title)
 $.ajax({
        url: title ,
        type: "GET",
        dataType: "text",
        success: function(data) {
-			var converter = new showdown.Converter({ extensions: ['showdown-toc']} );
-		    //var converter = new showdown.Converter();
-            var html = converter.makeHtml(data);
-			$(".list").html(html);
+		var converter = new showdown.Converter({ extensions: ['showdown-toc']} );
+		//var converter = new showdown.Converter();
+		var html = converter.makeHtml(data);
+		$(".markdown-body").html(html);
        }
     })
 </script>
