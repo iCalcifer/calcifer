@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Calcifer | 卡尔の居酒屋</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script src="./../../js/showdown-toc.js"></script>
+	<link rel="stylesheet" href="./../../css/style.css">
+	<link rel="stylesheet" href="./../../css/page.css">
+    <link rel="shortcut icon" href="./../../favicon.ico">
+</head>
+
+<body>
+<div class="container">
+    <div class="head">
+		<a class="title" style="text-decoration: none !important;" href="https://calcifer.life">
+			<h1>Calcifer</h1>
+		</a>
+        <h2>声音里有良辰美景，有你聆听，就是最好的时光。</h2>
+    </div>
+    <div class="nav">
+		<!--<a href="mailto:hi@calcifer.life">hi@calcifer.life</a>-->
+        <a href="/">HOME</a>
+        <a href="/post/MusicIzakaya">卡尔の居酒屋</a>
+        <a href="/post/Neighbor">邻家卡尔酱</a>
+        <a href="/post/Storybook">故事里的事</a>
+        <a href="/post/Sometimesong">有时迷惘有时唱</a>
+    </div>
+
+    <section class="content">
+		<div class="item">
+			<div class="markdown-body"></div>
+		<a href="#" class="back">Back</a>
+		</div>
+    </section>
+
+    <div class="copy">© 2019 Calcifer | 保留一切权利</div>
+</div>
+</body>
+<script type="text/javascript">
+$(".back").click(function(){
+	history.back();
+});
+let pageParams = new URLSearchParams(window.location.search);
+let title = "list.md";
+if(pageParams.has('title')){
+	title = pageParams.get('title') + ".md";
+}
+$.ajax({
+       url: title ,
+       type: "GET",
+       dataType: "text",
+       success: function(data) {
+		var converter = new showdown.Converter({ extensions: ['showdown-toc']} );
+		//var converter = new showdown.Converter();
+		var html = converter.makeHtml(data);
+		$(".markdown-body").html(html);
+       }
+    })
+</script>
+<style>
+.item{
+text-align:left;
+}
+</style>
+</html>
+

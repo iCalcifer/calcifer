@@ -103,9 +103,11 @@ h3.listener {
 }
 
 .item img {
+    border-radius: 10%;
+}
+.icon {
     width: 60px;
     height: 60px;
-    border-radius: 10%;
 }
 
 .item strong {

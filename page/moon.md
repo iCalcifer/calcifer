@@ -2,8 +2,8 @@
 
 
 <audio controls="controls">
- 一元复始开新运，万象更新弃旧昔。
-    <source src="../podcast/moon.mp3" type="audio/wav">
+ 一元复始开新运，万象更新弃旧昔。(请使用现代化浏览器。
+    <source src="http://calcifer.life/podcast/MusicIzakaya/moon.mp3" type="audio/wav">
 </audio>
 
 *月，在日语里的发音是"tsuki"；*
