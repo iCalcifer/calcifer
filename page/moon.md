@@ -1,5 +1,11 @@
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=4&id=1249041&auto=0&height=90"></iframe>
 
+
+<audio controls="controls">
+ 一元复始开新运，万象更新弃旧昔。
+    <source src="../podcast/moon.mp3" type="audio/wav">
+</audio>
+
 *月，在日语里的发音是"tsuki"；*
 
 喜欢，好き，在日语里的发音是“suki”，顾左右言其他的慌乱里包裹着一点含蓄的爱意。若是会错了意，所有的脉脉含情都将变成天河里渐渐散去波纹，徒留“悄立市桥人不识，一星如月看多时”的郁郁；若是恰好心有灵犀，那便有“愿我如星君如月，夜夜流光相皎洁。月暂晦，星常明。留明待月复，三五共盈盈”的无限希冀。
