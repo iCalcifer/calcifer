@@ -1,6 +1,6 @@
 《vol.20 This Town》
 
-<img src="/images/post/Neighbor/vol21.jpg"/>
+<img src="/images/post/Neighbor/vol20.jpg"/>
 
 **坐地日行八万里，巡天遥看一千河。**
 

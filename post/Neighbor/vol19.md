@@ -1,6 +1,6 @@
 《vol.19 O》
 
-<img src="/images/post/Neighbor/vol21.jpg"/>
+<img src="/images/post/Neighbor/vol19.jpg"/>
 
 **活着的东西都是很费工夫的。**
 
