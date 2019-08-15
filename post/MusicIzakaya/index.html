@@ -42,23 +42,22 @@
 </div>
 </body>
 <script type="text/javascript">
-$(".back").click(function(){
-	history.back();
-});
+let pathname = window.location.pathname; 
 let pageParams = new URLSearchParams(window.location.search);
 let title = "list.md";
 let topic = "s2e";
 let max = 6;
 let min = 1;
+
 if(pageParams.has('title')){
 	title = pageParams.get('title') + ".md";
 
 	var next = Number(pageParams.get('title').split(topic)[1])+1;
 	var prev = Number(pageParams.get('title').split(topic)[1])-1;
 
-	var pathname = window.location.pathname; 
 	$(".prev").attr("href",pathname + "?title=" + topic + prev);
 	$(".next").attr("href",pathname + "?title=" + topic + next);
+	$(".back").attr("href",pathname);
 
 	if(next > max){
 		$(".next").hide();
@@ -68,8 +67,9 @@ if(pageParams.has('title')){
 		$(".prev").hide();
 	}
 }else{
-		$(".prev").hide();
-		$(".next").hide();
+	$(".prev").hide();
+	$(".next").hide();
+	$(".back").attr("href","/");
 }
 $.ajax({
        url: title ,
