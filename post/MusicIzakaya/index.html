@@ -6,10 +6,10 @@
     <title>Calcifer | 卡尔の居酒屋</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-	<script src="./../../js/showdown-toc.js"></script>
-	<link rel="stylesheet" href="./../../css/style.css">
-	<link rel="stylesheet" href="./../../css/page.css">
-    <link rel="shortcut icon" href="./../../favicon.ico">
+	<!--<script src="/js/showdown-toc.js"></script>-->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/page.css">
+    <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 <body>
@@ -21,7 +21,6 @@
         <h2>声音里有良辰美景，有你聆听，就是最好的时光。</h2>
     </div>
     <div class="nav">
-		<!--<a href="mailto:hi@calcifer.life">hi@calcifer.life</a>-->
         <a href="/">HOME</a>
         <a href="/post/MusicIzakaya">卡尔の居酒屋</a>
         <a href="/post/Neighbor">邻家卡尔酱</a>
@@ -32,7 +31,10 @@
     <section class="content">
 		<div class="item">
 			<div class="markdown-body"></div>
-		<a href="#" class="back">Back</a>
+
+			<a href="#" class="prev">Prev</a>
+			<a href="#" class="back">Back</a>
+			<a href="#" class="next">Next</a>
 		</div>
     </section>
 
@@ -45,16 +47,37 @@ $(".back").click(function(){
 });
 let pageParams = new URLSearchParams(window.location.search);
 let title = "list.md";
+let topic = "s2e";
+let max = 6;
+let min = 1;
 if(pageParams.has('title')){
 	title = pageParams.get('title') + ".md";
+
+	var next = Number(pageParams.get('title').split(topic)[1])+1;
+	var prev = Number(pageParams.get('title').split(topic)[1])-1;
+
+	var pathname = window.location.pathname; 
+	$(".prev").attr("href",pathname + "?title=" + topic + prev);
+	$(".next").attr("href",pathname + "?title=" + topic + next);
+
+	if(next > max){
+		$(".next").hide();
+	}
+
+	if(prev < min){
+		$(".prev").hide();
+	}
+}else{
+		$(".prev").hide();
+		$(".next").hide();
 }
 $.ajax({
        url: title ,
        type: "GET",
        dataType: "text",
        success: function(data) {
-		var converter = new showdown.Converter({ extensions: ['showdown-toc']} );
-		//var converter = new showdown.Converter();
+		//var converter = new showdown.Converter({ extensions: ['showdown-toc']} );
+		var converter = new showdown.Converter();
 		var html = converter.makeHtml(data);
 		$(".markdown-body").html(html);
        }

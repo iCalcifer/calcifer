@@ -96,7 +96,7 @@ h3.listener {
     font-size: 14px;
 }
 
-.back {
+.back,.next,.prev {
     color: #ccc !important;
     margin-top: 2em;
     text-decoration: underline !important;
