@@ -1,3 +1,4 @@
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=3&id=908588851&auto=0&height=90"></iframe>
 《vol.7 你看，我清峻而唯美的心》
 
 *卡尔西法2015-3-25 15:41  |  阅读时间: 4min  *

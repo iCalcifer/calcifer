@@ -1,3 +1,4 @@
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=3&id=2060915955&auto=0&height=90"></iframe>
 《Vol.18 Blind》
 
 从微博上看到俞飞鸿今年有部电影上映，名字叫做《在乎你》，看预告和卡司，是中日合拍片，内容是关于爱情，选择和人生。
