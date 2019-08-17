@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Calcifer | 卡尔の居酒屋</title>
+    <title>Calcifer | 邻家卡尔酱</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 	<!--<script src="/js/showdown-toc.js"></script>-->
@@ -24,20 +24,22 @@
         <a href="/">HOME</a>
         <a href="/post/MusicIzakaya">卡尔の居酒屋</a>
         <a href="/post/Neighbor">邻家卡尔酱</a>
-        <!--
         <a href="/post/Storybook">故事里的事</a>
+        <a href="mailto:hi@calcifer.life">hi@calcifer.life</a>
+<!--        
         <a href="/post/Sometimesong">有时迷惘有时唱</a>
-        -->
-		<a href="mailto:hi@calcifer.life">hi@calcifer.life</a>
+-->
     </div>
 
     <section class="content">
 		<div class="item">
 			<div class="markdown-body"></div>
-
-			<a href="#" class="prev">Prev</a>
+			<a href="#" class="back">Back</a>
+			<!--
+			<a href="#" class="prev">Prev</a>			
 			<a href="#" class="back">Back</a>
 			<a href="#" class="next">Next</a>
+			-->
 		</div>
     </section>
 
@@ -48,35 +50,13 @@
 let pathname = window.location.pathname; 
 let pageParams = new URLSearchParams(window.location.search);
 let title = "list.md";
-
-
-if(pageParams.has('post')){
-	let topic = "Vol.";
-	let max = 10;
-	let min = 1;
-	title = pageParams.get('post') + ".md";
-
-	var next = Number(pageParams.get('post').split(topic)[1])+1;
-	var prev = Number(pageParams.get('post').split(topic)[1])-1;
-
-	$(".prev").attr("href",pathname + "?post=" + topic + prev);
-	$(".next").attr("href",pathname + "?post=" + topic + next);
-	$(".back").attr("href",pathname);
-
-	if(next > max){
-		$(".next").attr("href",pathname + "?title=s2e1");
-		$(".next").text("Season 2");
-	}
-
-	if(prev < min){
-		$(".prev").hide();
-	}
-}else if(pageParams.has('title')){
-	let topic = "s2e";
-	let max = 6;
-	let min = 1;
+let topic = "vol";
+let max = 21;
+let min = 1;
+if(pageParams.has('title')){
 	title = pageParams.get('title') + ".md";
-
+	$(".back").attr("href",pathname);
+/*
 	var next = Number(pageParams.get('title').split(topic)[1])+1;
 	var prev = Number(pageParams.get('title').split(topic)[1])-1;
 
@@ -85,17 +65,20 @@ if(pageParams.has('post')){
 	$(".back").attr("href",pathname);
 
 	if(next > max){
-		$(".next").attr("href",pathname + "?post=Vol.1");
-		$(".next").text("Season 1");
+		$(".next").hide();
 	}
 
 	if(prev < min){
 		$(".prev").hide();
 	}
+*/
 }else{
+$(".back").attr("href","/");
+/*
 	$(".prev").hide();
 	$(".next").hide();
 	$(".back").attr("href","/");
+*/
 }
 $.ajax({
        url: title ,
