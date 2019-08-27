@@ -79,7 +79,7 @@ h3.listener {
 }
 
 .zhuanlan {
-	width: 25.7em;
+	width: 22.7em;
 	padding: 20px;
 }
 
@@ -132,5 +132,6 @@ h3.listener {
 }
 
 #butInstall {
+  display:none;
   background: url(/images/install.svg) center center no-repeat;
 }
