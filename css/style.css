@@ -131,3 +131,6 @@ h3.listener {
     }
 }
 
+#butInstall {
+  background: url(/images/install.svg) center center no-repeat;
+}

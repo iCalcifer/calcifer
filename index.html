@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="Description" content="Calcifer's person website.">
+	<meta name="Description" content="Calcifer's personal website.">
     <title>Calcifer | 卡尔西法 </title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
+	<link rel="manifest" href="/manifest.json">
+
+	<!-- PWA:Add iOS meta tags and icons -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Calcifer">
+	<link rel="apple-touch-icon" href="/images/logo144.png">
+	<meta name="theme-color" content="#FFF" />
+
+
+	<!-- PWA:Service Worker -->
+	<script>
+		if ('serviceWorker' in navigator) {
+		  window.addEventListener('load', () => {
+			navigator.serviceWorker.register('/service-worker.js')
+				.then((reg) => {
+				  console.log('Service worker registered.', reg);
+				});
+		  });
+		}
+	</script>
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106738345-3"></script>
@@ -41,7 +63,12 @@
         <a target="_blank" rel="noopener" href="https://t.me/CalciferPod">电报频道</a>
 -->
     </div>
+
+
     <h3 class="listener">还可以在哪里可以找到我？</h3>
+
+	<button id="pwaInstall" aria-label="Install" hidden></button>
+
     <section class="content">
         <div class="item">
             <a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=45712183">
@@ -128,4 +155,5 @@
     <div class="copy">© 2019 Calcifer | 保留一切权利</div>
 </div>
 </body>
+<script src="/js/install.js"></script>
 </html>
