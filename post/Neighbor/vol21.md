@@ -1,7 +1,7 @@
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=3&id=2062324490&auto=0&height=90"></iframe>
 《vol.21 With You》
 
-<img src="/images/post/Neighbor/vol21.jpg"/>
+<img src="https://cdn.jsdelivr.net/gh/iCalcifer/icalcifer.github.io/images/post/Neighbor/vol21.jpg"/>
 
 也许保持一种心情时，看到的，听见的，感受到的，都是与心情相同颜色、相同气味的事物。 *这便是生活的玄妙吗？或者这只是当我被困住时的偏见呢？*
 

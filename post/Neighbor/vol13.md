@@ -148,7 +148,7 @@ on.
 
 于是，我出现了，出现在见面会的舞台上，出现在那一束柔和的灯光里，被灯光照耀得看不见那些看着我的观众，却突然变得平静又快乐地，说了些想对大家说的话。
 
-<img src="/images/post/Neighbor/vol13.jpg"/>
+<img src="https://cdn.jsdelivr.net/gh/iCalcifer/icalcifer.github.io/images/post/Neighbor/vol13.jpg"/>
 
 我是你们的卡尔酱，更是属于自己的。
 

@@ -1,7 +1,7 @@
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=3&id=2061501074&auto=0&height=90"></iframe>
 《vol.19 O》
 
-<img src="/images/post/Neighbor/vol19.jpg"/>
+<img src="https://cdn.jsdelivr.net/gh/iCalcifer/icalcifer.github.io/images/post/Neighbor/vol19.jpg"/>
 
 **活着的东西都是很费工夫的。**
 

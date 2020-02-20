@@ -1,7 +1,7 @@
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=3&id=2062004219&auto=0&height=90"></iframe>
 《vol.20 This Town》
 
-<img src="/images/post/Neighbor/vol20.jpg"/>
+<img src="https://cdn.jsdelivr.net/gh/iCalcifer/icalcifer.github.io/images/post/Neighbor/vol20.jpg"/>
 
 **坐地日行八万里，巡天遥看一千河。**
 
